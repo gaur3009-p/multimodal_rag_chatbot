@@ -22,3 +22,16 @@ docker run -d -p 8080:8080 cr.weaviate.io/semitechnologies/weaviate:1.22.4
 uvicorn backend.main:app --reload
 streamlit run frontend/app.py
 ```
+
+# FULL IMPLEMETATION
+
+
+This implementation provides a complete working foundation for a multimodal RAG chatbot. You'll need to:
+
+1. Install Tesseract OCR for image processing (`apt-get install tesseract-ocr` on Ubuntu)
+2. Configure proper model weights storage (models will auto-download)
+3. Adjust the Weaviate schema and retrieval parameters based on your use case
+4. Add error handling and logging for production use
+5. Implement rate limiting and security measures
+
+The system currently uses CPU-only inference - consider adding GPU support and model quantization for better performance.
