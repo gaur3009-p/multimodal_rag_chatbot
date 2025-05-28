@@ -23,7 +23,7 @@ uvicorn backend.main:app --reload
 streamlit run frontend/app.py
 ```
 
-# FULL IMPLEMETATION
+# FuLl ImPlEmEnTaTiOn
 
 
 This implementation provides a complete working foundation for a multimodal RAG chatbot. You'll need to:
